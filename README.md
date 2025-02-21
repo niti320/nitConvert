@@ -1,5 +1,8 @@
 # Image to PDF Converter
 
+![App Screenshot](/image.png)
+
+
 ## Overview
 This application allows users to upload, delete, and rearrange images before converting them into a single PDF file. It provides an intuitive interface for managing images and generating PDFs with ease.
 
@@ -49,7 +52,5 @@ Feel free to submit issues and pull requests. Contributions are welcome!
 Special thanks to all contributors and libraries used in this project.
 
 ---
-### Screenshot (Optional)
-![App Screenshot](/image.png)
 
 
