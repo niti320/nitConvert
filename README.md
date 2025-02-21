@@ -4,7 +4,7 @@
 
 
 ## Overview
-This application allows users to upload, delete, and rearrange images before converting them into a single PDF file. It provides an intuitive interface for managing images and generating PDFs with ease.
+This application allows users to upload, delete, images before converting them into a single PDF file. It provides an intuitive interface for managing images and generating PDFs with ease.
 
 ## Features
 - **Upload Images**: Add multiple images for PDF conversion.
