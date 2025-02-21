@@ -30,7 +30,6 @@ function App() {
     const pageWidth = 210;
     const pageHeight = 297;
   
-    // Function to add an image to the PDF
     const addImageToPDF = (img, index, callback) => {
       const imgElement = new Image();
       imgElement.src = img;
@@ -51,28 +50,26 @@ function App() {
           doc.addImage(imgElement, "PNG", 0, y, pdfWidth, pdfHeight, null, 'FAST');
         }
   
-        // Add a new page if it's not the last image
         if (index < images.length - 1) {
           doc.addPage();
         }
   
-        callback(); // Call the callback after adding the image
+        callback(); 
       };
     };
   
-    // Function to process images in sequence
     const processImagesInSequence = (index) => {
       if (index >= images.length) {
-        doc.save("images.pdf"); // Save the PDF after processing all images
+        doc.save("images.pdf");
         return;
       }
   
       addImageToPDF(images[index], index, () => {
-        processImagesInSequence(index + 1); // Process the next image
+        processImagesInSequence(index + 1); 
       });
     };
   
-    processImagesInSequence(0); // Start processing from the first image
+    processImagesInSequence(0); 
   };
 
 
@@ -130,7 +127,7 @@ function App() {
         });
       }
     };
-    fileInput.click(); // Open file dialog
+    fileInput.click(); 
   };
   useEffect(() => {
     setShowImageShower(images.length > 0);
@@ -149,7 +146,7 @@ function App() {
           accept="image/*"
           onChange={handleImageUpload}
           className="inputCbox"
-          style={{ display: 'none' }}  // Hide the default input
+          style={{ display: 'none' }} 
         />
         <label htmlFor="fileInput" className="fileInputLabel ButtonDesign" >
           <i  class="fa-regular fa-image"></i>
