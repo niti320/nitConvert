@@ -50,5 +50,6 @@ Special thanks to all contributors and libraries used in this project.
 
 ---
 ### Screenshot (Optional)
-_Add screenshots here to showcase the app's functionality._
+![App Screenshot](/image.png)
+
 
